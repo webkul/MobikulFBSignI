@@ -15,12 +15,12 @@
 		29133C42EF5BBB108C00DDDD /* Pods-MobikulFBSignI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobikulFBSignI_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobikulFBSignI_Tests/Pods-MobikulFBSignI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B6CFF0975450C3BA08506AC /* Pods-MobikulFBSignI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobikulFBSignI_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobikulFBSignI_Tests/Pods-MobikulFBSignI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3F9B9B41178431EF43FDAD5B /* Pods_MobikulFBSignI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobikulFBSignI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FEFE9A22CC1BA6C367502AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4FEFE9A22CC1BA6C367502AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MobikulFBSignI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobikulFBSignI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		CD2D8410B97B217D632EB2C7 /* MobikulFBSignI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MobikulFBSignI.podspec; path = ../MobikulFBSignI.podspec; sourceTree = "<group>"; };
-		F8E2F61CCC98678B103B64EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CD2D8410B97B217D632EB2C7 /* MobikulFBSignI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MobikulFBSignI.podspec; path = ../MobikulFBSignI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F8E2F61CCC98678B103B64EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +130,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -175,15 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MobikulFBSignI_Tests/Pods-MobikulFBSignI_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MobikulFBSignI/MobikulFBSignI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobikulFBSignI.framework",
 			);
@@ -197,15 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MobikulFBSignI_Tests-checkManifestLockResult.txt",
 			);

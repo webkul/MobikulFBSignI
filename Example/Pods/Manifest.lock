@@ -1,0 +1,16 @@
+PODS:
+  - MobikulFBSignI (0.1.0)
+
+DEPENDENCIES:
+  - MobikulFBSignI (from `../`)
+
+EXTERNAL SOURCES:
+  MobikulFBSignI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MobikulFBSignI: 621e7d7632c2dc3e8d7411a23f3df4ba3900095f
+
+PODFILE CHECKSUM: c55e815c553a9c2487a2bb76567474cb7f0c6223
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Pods_MobikulFBSignI_Tests {
+  umbrella header "Pods-MobikulFBSignI_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

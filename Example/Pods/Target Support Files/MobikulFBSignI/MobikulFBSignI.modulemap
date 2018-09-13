@@ -1,0 +1,6 @@
+framework module MobikulFBSignI {
+  umbrella header "MobikulFBSignI-umbrella.h"
+
+  export *
+  module * { export * }
+}
