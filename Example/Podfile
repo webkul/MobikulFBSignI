@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MobikulFBSignI_Tests' do
+  pod 'MobikulFBSignI', :path => '../'
+  
+  
+end
