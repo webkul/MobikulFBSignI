@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MobikulFacebookSigninView" customModule="Odoo_Marketplace" customModuleProvider="target">
+            <connections>
+                <outlet property="fbBtn" destination="cU8-Kz-QyB" id="bro-xn-LM8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cU8-Kz-QyB">
+                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="facebook"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="facebookClicked:" destination="-1" eventType="touchUpInside" id="OwN-GC-3yL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cU8-Kz-QyB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ogy-wK-XT3"/>
+                <constraint firstItem="cU8-Kz-QyB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="S7Y-qb-JdF"/>
+                <constraint firstItem="cU8-Kz-QyB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="owh-QF-8ih"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cU8-Kz-QyB" secondAttribute="bottom" id="vAu-9y-yQD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="facebook" width="28" height="28"/>
+    </resources>
+</document>
