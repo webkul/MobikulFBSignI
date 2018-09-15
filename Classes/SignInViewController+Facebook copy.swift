@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import FBSDKLoginKit
+//
 
-class MobikulFBSignIn: NSObject {
+class MobikulFBSignIn: NSObject{
     
     override init() {
         super.init()
@@ -16,6 +18,7 @@ class MobikulFBSignIn: NSObject {
         if let viewController = view??.rootViewController {
             self.fbLogin(view: viewController)
         }
+        
     }
     
     func fbLogin(view: UIViewController) {
@@ -26,9 +29,11 @@ class MobikulFBSignIn: NSObject {
                 if let fbloginresult : FBSDKLoginManagerLoginResult = (result)
                 {
                     if(fbloginresult.isCancelled){
+                        
                     }
                     else{
-                        if(fbloginresult.grantedPermissions.contains("email")) {
+                        if(fbloginresult.grantedPermissions.contains("email"))
+                        {
                             self.getFBUserData()
                         }
                     }
@@ -40,9 +45,21 @@ class MobikulFBSignIn: NSObject {
     func getFBUserData(){
         if((FBSDKAccessToken.current()) != nil){
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
-                if let _ = error, let Dict  = result as? [String : Any] {
-                    NotificationCenter.default.post(name:  NSNotification.Name(rawValue: "MobikulFBSignIn"), object: nil, userInfo: Dict)
+                if (error == nil){
+                    //everything works print the user data
+                    //                    print("wd",result)
+                    
+                    let Dict  = result as? [String : Any]
+                    var loginDict = [String : Any]()
+                    loginDict["login"] = (Dict?["email"] as? String)
+                    loginDict["name"] = (Dict?["first_name"] as? String)
+                    loginDict["authUserId"] = (Dict?["id"] as? String)
+                    loginDict["authProvider"] = "FACEBOOK"
+                    loginDict["isSocialLogin"] = true
+                    loginDict["password"] = ""
+                    NotificationCenter.default.post(name:  NSNotification.Name(rawValue: "MobikulFBSignIn"), object: nil, userInfo: loginDict)
                 }
+                
             })
         }
     }
