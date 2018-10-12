@@ -28,8 +28,24 @@ pod 'MobikulFBSignI'
 On click event of facebook button 
 ```ruby
 if let myclass = stringClassFromString("MobikulFBSignIn") as? NSObject.Type {
-_ = myclass.init()
-NotificationCenter.default.addObserver(self, selector: #selector(SignInDataViewController.responseFromSocialLogin), name: NSNotification.Name(rawValue: "MobikulFBSignIn"), object: nil)
+    _ = myclass.init()
+    NotificationCenter.default.addObserver(self, selector: #selector(SignInDataViewController.responseFromSocialLogin), name: NSNotification.Name(rawValue: "MobikulFBSignIn"), object: nil)
+}
+func stringClassFromString(_ className: String) -> AnyClass? {
+    var namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
+    namespace = "MobikulFBSignI".replacingOccurrences(of: " ", with: "_")
+    return NSClassFromString("\(namespace).\(className)");
+}
+```
+
+Get Response after sign with facebook done
+```ruby
+@objc func responseFromSocialLogin(data: Any) {
+    if let x = data as? NSNotification , let fbData = x.userInfo as? [String: Any] {
+        print(fbData["email"] as? String)
+        print(fbData["first_name"] as? String)
+        print(fbData["last_name"] as? String)
+    }
 }
 ```
 
