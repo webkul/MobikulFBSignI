@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1297F02C812F9BA19927F7AC4F89E3EA /* MobikulFBSignI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED1C61586BE1A2BFE3A045F5114099D /* MobikulFBSignI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33EE7F93214A7AA40058919B /* SignInViewController+Facebook copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EE7F92214A7AA30058919B /* SignInViewController+Facebook copy.swift */; };
+		33EE7F93214A7AA40058919B /* SignInViewController+Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EE7F92214A7AA30058919B /* SignInViewController+Facebook.swift */; };
 		5C0874E7A2EF716F3F5082A491D43AEA /* MobikulFBSignI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EC6FE07CA3EBC23DD181AF3C98F466 /* MobikulFBSignI-dummy.m */; };
 		7AADE4E88B25D249DF08B28513A82D1D /* Pods-MobikulFBSignI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C70FDA9AE2BB6EE7381CA27F83D29AAC /* Pods-MobikulFBSignI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B33FFF1B3E977D156C928658C5362023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		33EE7F92214A7AA30058919B /* SignInViewController+Facebook copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+Facebook copy.swift"; sourceTree = "<group>"; };
+		33EE7F92214A7AA30058919B /* SignInViewController+Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+Facebook.swift"; sourceTree = "<group>"; };
 		45F308E5EB2DF9F42AD6EFA1B30C687B /* Pods-MobikulFBSignI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MobikulFBSignI_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		495AF16B30E6F8FDB6936D1E7B8A33BC /* Pods-MobikulFBSignI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MobikulFBSignI_Tests-dummy.m"; sourceTree = "<group>"; };
 		4D957736AE04E0D9248B5B555A78E97A /* Pods_MobikulFBSignI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobikulFBSignI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,14 +99,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		33EE7F91214A7AA30058919B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				33EE7F92214A7AA30058919B /* SignInViewController+Facebook copy.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +153,7 @@
 		BAEB3C2F2E0256396607220789A7761F /* MobikulFBSignI */ = {
 			isa = PBXGroup;
 			children = (
-				33EE7F91214A7AA30058919B /* Classes */,
+				33EE7F92214A7AA30058919B /* SignInViewController+Facebook.swift */,
 				018804B291C9A6314F78FACA0FE8D828 /* Pod */,
 				9847DE7714BD6690E9B75FB75C1ECEF0 /* Support Files */,
 			);
@@ -307,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33EE7F93214A7AA40058919B /* SignInViewController+Facebook copy.swift in Sources */,
+				33EE7F93214A7AA40058919B /* SignInViewController+Facebook.swift in Sources */,
 				5C0874E7A2EF716F3F5082A491D43AEA /* MobikulFBSignI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

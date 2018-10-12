@@ -46,18 +46,8 @@ class MobikulFBSignIn: NSObject{
         if((FBSDKAccessToken.current()) != nil){
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
                 if (error == nil){
-                    //everything works print the user data
-                    //                    print("wd",result)
-                    
                     let Dict  = result as? [String : Any]
-                    var loginDict = [String : Any]()
-                    loginDict["login"] = (Dict?["email"] as? String)
-                    loginDict["name"] = (Dict?["first_name"] as? String)
-                    loginDict["authUserId"] = (Dict?["id"] as? String)
-                    loginDict["authProvider"] = "FACEBOOK"
-                    loginDict["isSocialLogin"] = true
-                    loginDict["password"] = ""
-                    NotificationCenter.default.post(name:  NSNotification.Name(rawValue: "MobikulFBSignIn"), object: nil, userInfo: loginDict)
+                    NotificationCenter.default.post(name:  NSNotification.Name(rawValue: "MobikulFBSignIn"), object: nil, userInfo: Dict)
                 }
                 
             })
