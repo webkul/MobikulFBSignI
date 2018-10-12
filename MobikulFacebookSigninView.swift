@@ -23,10 +23,7 @@ class MobikulFacebookSigninView: UIView {
     }
     */
     
-  
-    
     @IBAction func facebookClicked(_ sender: UIButton) {
-        print("hello")
-//         NotificationCenter.default.post(name:  NSNotification.Name(rawValue: "MobikulFacebookSigninViewClicked"), object: nil)
+         NotificationCenter.default.post(name:  NSNotification.Name(rawValue: "MobikulFacebookSigninViewClicked"), object: nil)
     }
 }
