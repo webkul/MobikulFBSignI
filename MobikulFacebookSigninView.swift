@@ -11,6 +11,10 @@ import UIKit
 class MobikulFacebookSigninView: UIView {
     @IBOutlet weak var fbBtn: UIButton!
     
+    override func awakeFromNib() {
+        fbBtn.setImage(UIImage(named: "facebook.pdf"), for: UIControlState.normal)
+    }
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

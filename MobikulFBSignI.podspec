@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MobikulFBSignI'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = 'A short description of MobikulFBSignI.'
 
 # This description is used to generate tags and improve search results.
@@ -32,12 +32,12 @@ TODO: Add long description of the pod here.
 
   s.source_files = "*"
 
-#  s.resource_bundles = {
-#      'MobikulFBSignI' => [
-#      'MobikulFBSignI/*.{xib,xcassets}'
-#      ]
-#  }
-  
+  s.resource_bundles = {
+      'MobikulFBSignI' => [
+      '*.{xib,xcassets}'
+      ]
+  }
+
   # s.resource_bundles = {
   #   'MobikulFBSignI' => ['MobikulFBSignI/Assets/*.png']
   # }
