@@ -8,7 +8,6 @@
 
 import Foundation
 import FBSDKLoginKit
-//
 
 class MobikulFBSignIn: NSObject{
     
