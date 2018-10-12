@@ -31,6 +31,7 @@ if let myclass = stringClassFromString("MobikulFBSignIn") as? NSObject.Type {
     _ = myclass.init()
     NotificationCenter.default.addObserver(self, selector: #selector(SignInDataViewController.responseFromSocialLogin), name: NSNotification.Name(rawValue: "MobikulFBSignIn"), object: nil)
 }
+
 func stringClassFromString(_ className: String) -> AnyClass? {
     var namespace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String;
     namespace = "MobikulFBSignI".replacingOccurrences(of: " ", with: "_")
