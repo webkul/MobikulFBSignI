@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MobikulFBSignI'
-  s.version          = '0.7.0'
+  s.version          = '0.8.0'
   s.summary          = 'A short description of MobikulFBSignI.'
 
 # This description is used to generate tags and improve search results.
